@@ -89,7 +89,7 @@ Deno.serve(async () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: 'Smart Money Manager <onboarding@resend.dev>',
+          from: 'Smart Money Manager <reminder@yourdomain.com>',
           to: [reminder.remind_email],
           subject: `⏰ Reminder: ${reminder.title}${reminder.amount ? ` - Rp ${Number(reminder.amount).toLocaleString('id-ID')}` : ''}`,
           html: emailHtml,
