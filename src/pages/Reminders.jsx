@@ -69,8 +69,8 @@ function ReminderModal({ onClose, onSaved, initial }) {
             <input className="input" value={form.description} onChange={e => set('description', e.target.value)} placeholder="Any extra details..." />
           </div>
         </div>
-        <div style={{ background: 'var(--amber-dim)', border: '1px solid rgba(255,179,71,0.2)', borderRadius: 'var(--radius-sm)', padding: '10px 14px', marginTop: 14, fontSize: 12, color: 'var(--amber)' }}>
-          ⚠️ Email sending requires Supabase Edge Functions setup (Step 2). Reminders are saved now.
+        <div style={{ background: 'var(--accent-dim)', border: '1px solid rgba(124,92,252,0.2)', borderRadius: 'var(--radius-sm)', padding: '12px 14px', marginTop: 14, fontSize: 12, color: 'var(--accent)' }}>
+          💡 Reminder will be saved now. To activate email sending, follow the <strong>EMAIL-REMINDER-SETUP.md</strong> guide in your project folder.
         </div>
         {error && <p style={{ color: 'var(--red)', fontSize: 13, marginTop: 10 }}>{error}</p>}
         <div style={{ display: 'flex', gap: 10, marginTop: 18 }}>
